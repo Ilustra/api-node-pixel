@@ -7,8 +7,8 @@ const app = express();
 const PORT = process.env.PORT || 4000;
 
 
-// require('./app/controllers/index');
-app.use('/graphql', userGraphQLController);
+ require('./app/controllers/index')(app);
+//app.use('/graphql', userGraphQLController);
 
 app.listen(PORT, () => {
   console.log(`-------------------------------------------------------`);
