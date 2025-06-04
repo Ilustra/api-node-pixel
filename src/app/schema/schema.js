@@ -11,7 +11,7 @@ const {
   GraphQLNonNull
 } = graphql;
 
-// Tipo de dado: User
+
 const UserType = new GraphQLObjectType({
   name: 'User',
   fields: () => ({
